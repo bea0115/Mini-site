@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formular de contact">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Site Personal</title>
+</head>
+<body>
+    <header>
+        <h1>Bun venit la site-ul meu personal!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre mine</a></li>
+                <li><a href="proiecte.html">Proiecte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <form action="process_contact.php" method="POST">
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Trimite</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ormos Beatrice-Madalina.</p>
+    </footer>
+</body>
+</html>
